@@ -1,0 +1,11 @@
+<!-- 
+This launch file runs the jetsonbot demo node
+-->
+<launch>
+<include file="$(find turtlebot_follower)/launch/follower.launch" />
+<include file="$(find sound_play)/soundplay_node.launch" />
+<!-- This is for the straight 3D sensor
+<include file="$(find turtlebot_bringup)/launch/3dsensor.launch" />
+-->
+<include file="$(find jetsonbot_teleop)/launch/nyko_teleop_sound.launch" />
+</launch>
